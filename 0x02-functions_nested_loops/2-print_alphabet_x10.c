@@ -17,6 +17,7 @@ for (l = 0; l < 26; l++)
 {
 _putchar('a' + l);
 }
+ten++;
 _putchar('\n');
 }
 }
