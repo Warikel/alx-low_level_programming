@@ -1,0 +1,35 @@
+#include "main.h"
+#include <stdio.h>
+/**
+  * rot13 - ...
+  * @str: ...
+  *
+  * Return: ...
+  */
+char *rot13(char *str) {
+    char *rot13Str = str;
+    int i, j;
+
+for (i = 0; rot13Str[i] != '\0'; i++)
+{
+for (j = 0; j < 26; j++)
+{
+if (rot13Str[i] >= 'a' && rot13Str[i] <= 'z') {
+if (rot13Str[i] == 'a' + ((j + 13) % 26))
+{
+rot13Str[i] = 'a' + j;
+break;
+}
+}
+else if (rot13Str[i] >= 'A' && rot13Str[i] <= 'Z')
+{
+if (rot13Str[i] == 'A' + ((j + 13) % 26))
+{
+rot13Str[i] = 'A' + j;
+break;
+}
+}
+}
+}
+return (rot13St)r;
+}
