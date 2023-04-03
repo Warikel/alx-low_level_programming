@@ -1,0 +1,30 @@
+#include "main.h"
+/**
+ * _strstr - locate a substring
+ * @haystack: the string to search
+ * @needle: the string to find
+ *
+ * Return: the char value
+ */
+char *_strstr(char *haystack, char *needle)
+{
+char *haystack_pter, *needle_pter;
+
+while (*haystack != '\0')
+{
+haystack_pter = haystack;
+needle_pter = needle;
+
+while (*needle_pter == *haystack_pter && needle_pter != '\0' && haystack_pter != '\0')
+{
+needle_pter++;
+haystack_pter++;
+}
+if (needle_pter == '\0')
+{
+return (haystack);
+}
+haystack++;
+}
+return ('\0');
+}
