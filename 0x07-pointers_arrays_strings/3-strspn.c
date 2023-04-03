@@ -1,0 +1,33 @@
+#include "main.h"
+/**
+ * _strspn - search the length of a prefix sunstring
+ * @s: pointer to string to search
+ * @accept: pointer to a string containing characters to accept
+ *
+ * return: the length of the prefix substring
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+unsigned int i = 0;
+
+while (*s != '\0')
+{
+int l = 0;
+
+for (const char *a = accept; *a != '\0'; a++)
+{
+if (*s == *a)
+{
+l = 1;
+break;
+}
+}
+if (l == 0)
+{
+return (i);
+}
+i++;
+s++;
+}
+return (i);
+}
