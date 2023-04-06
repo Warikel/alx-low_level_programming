@@ -29,7 +29,7 @@ if (*s2 == '*')
 {
 return (wildcmp_h(s1 + 1, s2) || wildcmp_h(s1, s2 + 1));
 }
-if (*s1 == *s2 || *2 == '?')
+if (*s1 == *s2 || *s2 == '?')
 {
 return (wildcmp_h(s1 + 1, s2 + 1));
 }
