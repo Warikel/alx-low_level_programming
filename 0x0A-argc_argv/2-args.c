@@ -3,8 +3,8 @@
 
 /**
  * main - print all argument it receives
- * @argc: argument count
- * @argv: vector count
+ * @argc: number of arguments
+ * @argv: array of arguments
  *
  *Return: 0
  */
